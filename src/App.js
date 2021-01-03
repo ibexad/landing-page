@@ -26,11 +26,11 @@ function App() {
           <Container>
             <GridContainer>
                 <GridHeader>
-                  <H4>Welcome to the Sanakey portal!</H4>                  
+                  <H4>Herzlich Willkommmen im Sanakey-Portal!</H4>                  
                 </GridHeader>
-                <p>You can now enroll in the supply contract.<br/>
-                   Please enter your personal PIN first (you have received by SMS) and confirm with "Login".<br/>
-                   You will then receive all information about theSupply contract, the therapy content and the conditions of participation.</p>
+                <p>Sie können sich nun in den Versorgungsvertrag einschreiben.<br/>
+                   Bitte geben Sie zuerst Ihren persönlichen PIN ein (diesen haben Sie per SMS erhalten) und bestätigen mit „Anmelden“.<br/>
+                   Anschließend erhalten Sie alle Informationen zum Versorgungsvertrag, den Therapieinhalten und die Teilnahmebedingungen.</p>
                    <div className="app">
                     <PinInput
                       length={5}
@@ -44,8 +44,8 @@ function App() {
                   
                   <label for='confirm'>
                     <input type='checkbox' id='confirm' onClick={onCheckBoxClick}/>
-                    By entering the PIN and registering, I confirm that I have received the <Link as='a' href='https://www.sanakey.de/datenschutzerklaerung/' target='blank'>Data protection</Link> regulations and <Link as='a' href='https://www.sanakey.de/datenschutzerklaerung/' target='blank'>Terms of use</Link> of the Sanakey portal have read and accepted</label>
-                  <Button type='button' disabled={!checked} onClick={onLoginClick}>Login</Button>
+                    Mit Eingabe des PINs und der Anmeldung bestätige ich, dass ich die <Link as='a' href='https://www.sanakey.de/datenschutzerklaerung/' target='blank'>Datenschutzbestimmungen</Link> und <Link as='a' href='https://www.sanakey.de/datenschutzerklaerung/' target='blank'>Nutzungsbedingungen</Link> des Sanakey Portals gelesen und akzeptiert habe.</label>
+                  <Button type='button' disabled={!checked} onClick={onLoginClick}>Anmelden</Button>
             </GridContainer>
           </Container>
         </Grid>
