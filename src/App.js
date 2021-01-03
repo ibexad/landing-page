@@ -16,7 +16,7 @@ function App() {
   }
 
   const onLoginClick = (event) =>{
-    alert('Redirect to another page with the PIN: '+ pin)
+    alert('Weiterleiten auf eine andere Seite mit der PIN: '+ pin)
   }
 
   return (
